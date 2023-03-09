@@ -81,6 +81,17 @@ Second) You should enter your Usernames with their specified ports in the `user_
 
 ---
 
+### Preventation
+
+You can disable the user with the `prevent` folder.
+
+In there, you see three files: 
+1) `main.py`: Keep this file on the VPN server that hosts V2ray (France).
+2) `inventory.ini`: edit this file. Keep this file with other parent files.
+3) `playbook.yaml`: edit this file to replace the `db` path and the `main.py` script on the  VPN server. Keep this file with other parent files.
+
+---
+
 <!-- ROADMAP -->
 
 ## Roadmap
