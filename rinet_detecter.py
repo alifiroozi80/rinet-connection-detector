@@ -12,14 +12,14 @@ class RinetDetecter:
         self.RINET_LOG_PATH = rinet_log_path
         self.EMAIL_RECEIVER = email_receiver
 
-    def send_emil(self, name: str, port: str, custom_message:str="") -> None:
+    def send_emil(self, name: str, port: str, custom_message:str="", sources:set=[]) -> None:
         """
         This function sends notifies the Admin with Email
         """
         if custom_message != "":
             email_message = custom_message
         else:
-            email_message = f"Subject:VPN\n\nHello\n User: {name}: {port} has reached the limits!"
+            email_message = f"Subject:VPN\n\nHello\n User: {name}: {port} has reached the limits!\nSources: {sources}"
 
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
@@ -79,5 +79,5 @@ class RinetDetecter:
                 if len(set(self.ALL)) > 2:
                     # print(set(self.ALL))
                     # print(k, v)
-                    self.send_emil(name=k, port=v)
+                    self.send_emil(name=k, port=v, sources=set(self.ALL))
         return None
