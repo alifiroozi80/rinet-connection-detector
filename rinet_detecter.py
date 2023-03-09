@@ -58,9 +58,13 @@ class RinetDetecter:
         """
         Delete the content of the log file to prevent it from being a disk pressure
         """
-        with open(self.RINET_LOG_PATH, mode='r+') as f:
-                f.truncate(0)
-        return None
+        try:
+            with open(self.RINET_LOG_PATH, mode='r+') as f:
+                    f.truncate(0)
+        except Exception as e:
+            self.send_emil(name=" ", port=" ", custom_message=f"Subject:Script crash\n\nHello\n The Script ran into an error:\n {e}")
+        finally:
+            return None
 
     def detecte(self) -> None:
         """
