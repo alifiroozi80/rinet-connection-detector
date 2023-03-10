@@ -80,5 +80,8 @@ class RinetDetecter:
                     # print(set(self.ALL))
                     # print(k, v)
                     self.send_emil(name=k, port=v, sources=set(self.ALL))
-                    os.popen(f"ansible-playbook -i /home/ali/prevent/inventory.ini /home/ali/prevent/playbook.yaml --extra-vars 'xxx={v}'"
+                    try:
+                        os.system(f"ansible-playbook -i inventory.ini playbook.yaml --extra-vars 'xxx={v}'")
+                    except Exception as e:
+                        self.send_emil(name=" ", port=" ", custom_message=f"Subject:Script crash\n\nHello\n The Script ran into an error:\n {e}")
         return None
