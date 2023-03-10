@@ -2,7 +2,7 @@
 <br />
 <div align="center">
 
-<h3 align="center">Rinetd Connection Detecter</h3>
+<h3 align="center">Rinetd Connection Detector</h3>
 
   <p align="center">
     Limit V2ray user while they are behind another Server (Rinetd)
@@ -99,7 +99,7 @@ In there, you see three files:
 - [x] Add real-world examples
 - [x] Add exam tips
 - [ ] Add Dockerfile and Docker Compose examples
-- [ ] Automatically disabled user (With Ansible)
+- [x] Automatically disabled user (With Ansible)
 
 See the [open issues](https://github.com/alifiroozi80/rinet-connection-detecter/issues) for a complete list of proposed features (and known
 issues).
