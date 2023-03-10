@@ -2,4 +2,4 @@
 - hosts: france
   tasks:
   - name: Run a script using an executable in a system path
-    ansible.builtin.shell: python3 /root/main.py "{{ port }}"
+    ansible.builtin.shell: python3 /root/main.py "{{ xxx }}"

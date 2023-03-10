@@ -80,4 +80,5 @@ class RinetDetecter:
                     # print(set(self.ALL))
                     # print(k, v)
                     self.send_emil(name=k, port=v, sources=set(self.ALL))
+                    os.popen(f"ansible-playbook -i /home/ali/prevent/inventory.ini /home/ali/prevent/playbook.yaml --extra-vars 'xxx={v}'"
         return None
