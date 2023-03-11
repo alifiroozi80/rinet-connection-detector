@@ -47,10 +47,7 @@ class RinetDetector:
         """
 
         for user, port in users.items():
-            connected_ips = set()
-            for connected_ip, connected_port in connected_users:
-                if str(port) == connected_port:
-                    connected_ips.add(connected_ip)
+            connected_ips = {_ip for _ip, _port in connected_users if str(port) == _port}
 
             if len(connected_ips) > self.max_connections:
                 self._ban_user(user=user, port=port, connected_ips=connected_ips)
