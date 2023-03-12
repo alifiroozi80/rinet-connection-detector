@@ -16,7 +16,7 @@
 
 ---
 
-### What is Rinet?
+### What is Rinetd?
 [Rinetd](https://github.com/samhocevar/rinetd) efficiently redirects connections from one IP address/port combination to another. It is useful when operating virtual servers, firewalls, and the like.
 
 It is a fantastic tool, especially in this scenario:
@@ -31,7 +31,7 @@ To achieve this, on France Server, you can install whatever VPN you want (V2ray,
 
 ---
 
-### Usecase
+### UseCase
 Let's say you successfully deployed this setup.
 
 Now you want to Limit users to two users at the same time.
@@ -81,7 +81,7 @@ Second) You should enter your Usernames with their specified ports in the `user_
 
 ---
 
-### Preventation
+### Prevention
 
 You can disable the user with the `prevent` folder.
 
