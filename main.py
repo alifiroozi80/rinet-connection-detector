@@ -1,7 +1,7 @@
 import os
 import time
 import schedule
-from rinet_detecter import RinetDetector
+from rinet_detector import RinetDetector
 
 
 RINET_LOG_FILE_ABSOLUTE_PATH = '/Users/ali/Desktop/rinet/1.log'

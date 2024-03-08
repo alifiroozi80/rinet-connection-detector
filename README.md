@@ -8,9 +8,9 @@
     Limit V2ray user while they are behind another Server (Rinetd)
     <br />
     <br />
-    <a href="https://github.com/alifiroozi80/rinet-connection-detecter/issues">Report Bug</a>
+    <a href="https://github.com/alifiroozi80/rinet-connection-detector/issues">Report Bug</a>
     ·
-    <a href="https://github.com/alifiroozi80/rinet-connection-detecter/issues">Request Feature</a>
+    <a href="https://github.com/alifiroozi80/rinet-connection-detector/issues">Request Feature</a>
   </p>
 </div>
 
@@ -101,7 +101,7 @@ In there, you see three files:
 - [ ] Add Dockerfile and Docker Compose examples
 - [x] Automatically disabled user (With Ansible)
 
-See the [open issues](https://github.com/alifiroozi80/rinet-connection-detecter/issues) for a complete list of proposed features (and known
+See the [open issues](https://github.com/alifiroozi80/rinet-connection-detector/issues) for a complete list of proposed features (and known
 issues).
 
 ---
@@ -127,7 +127,7 @@ with the tag "enhancement."
 
 ## License
 
-The license is under the MIT License. See [LICENSE](https://github.com/alifiroozi80/rinet-connection-detecter/blob/main/LICENSE) for more
+The license is under the MIT License. See [LICENSE](https://github.com/alifiroozi80/rinet-connection-detector/blob/main/LICENSE) for more
 information.
 
 ---
